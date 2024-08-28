@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <body>
+        <div class="Protfolio-container">
+            <ul class="navlist">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Service</a></li>
+            </ul>
+            <div class="left-container">
+                <div class="icons">
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+                    <a href="https://github.com/YashMahale01" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/yash_mahale.01?igsh=ZHMxeDB1azh4MHB3
+                    " target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                
+                <div class="content">.
+                    <p class="intro">Hi! I Am <span>Yash Mahale</span></p>
+                    <h1>Web Develover</h1>
+                    <p class="detail">A skilled web developer with a passion for crafting innovative, user-friendly digital experiences, leveraging expertise in HTML, CSS, JavaScript technologies to bring ideas to life.</p>
+                    <div class="btn-container">
+                        <button>Hire Me</button>
+                        <button>View Project</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container"></div>
+            <div class="design">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+
+        </div>
+    </body>
+    <script>
+        // Function to show alert for non-functional icon links
+        function showAlert(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            alert("This icon is currently not functional. Please check back later!"); // Show the alert message
+        }
+    
+        // Attach the showAlert function to non-functional icon links
+        document.querySelectorAll('.icons a[href="#"]').forEach(icon => {
+            icon.addEventListener('click', showAlert);
+        });
+    </script>
+    
+</html>
